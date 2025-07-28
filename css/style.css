@@ -37,7 +37,7 @@ button {
   font-family: inherit;
 }
 .container {
-  min-width: 320px;
+  width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -46,13 +46,13 @@ button {
 
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -323,7 +323,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/Hero/desctop/heroimg@hero-bg-1x.webp");
+    url("../images/Hero/mobile/dark-bg@hero-bg1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -339,7 +339,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/Hero/desctop/heroimg@hero-bg-2x.webp");
+      url("../images/Hero/mobile/dark-bg@hero-bg2x.webp");
     width: 100%;
   }
 }
@@ -364,7 +364,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/Hero/desctop/heroimg@hero-bg-2x.webp");
+      url("../images/Hero/tablet/imgtb@hero-bg-2x.webp");
   }
 }
 
@@ -374,7 +374,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/Hero/mobile/dark-bg@hero-bg1x.webp");
+      url("../images/Hero/desctop/heroimg@hero-bg-1x.webp");
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
@@ -386,7 +386,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/Hero/mobile/dark-bg@hero-bg2x.webp");
+      url("../images/Hero/desctop/heroimg@hero-bg-2x.webp");
   }
 }
 
@@ -1195,7 +1195,8 @@ button {
 }
 
 .modal-form-agree {
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -1228,6 +1229,40 @@ input[type="checkbox"]:checked + label .modal-form-checkbox {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+}
+
+@media only screen and (max-width: 767px) {
+  .modal-form-msg {
+    width: 232px;
+  }
+}
+
+.modal-form-btn {
+  display: block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
+  border: none;
+  margin: 0 auto;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn:focus,
+.modal-form-btn:hover{
+  background-color: #404bbf;
 }
 
 /* Mobile */

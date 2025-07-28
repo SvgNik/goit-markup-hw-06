@@ -682,7 +682,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
           <svg class="modal-button-icon" width="8" height="8">
@@ -764,13 +764,15 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
+              <div class="modal-form-msg">
               I accept the terms and conditions of the
               <a class="privacy-link" href="#" target="_blank"
                 >Privacy Policy</a
               >
+              </div>
             </label>
           </div>
-          <button class="submit" type="button">Send</button>
+          <button class="modal-form-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
